@@ -32,13 +32,99 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 102900000, guid: 09935d3be7f387b4194dd851106ebae3, type: 3}
+    - {fileID: 2800000, guid: 8466903178078a744b74d90565f7bc8d, type: 3}
+    - {fileID: 2800000, guid: e9a319e8517a7a648a22145f761f4fe4, type: 3}
+    - {fileID: 2800000, guid: 2d7a1d2584943e6458f0896b5246b2f7, type: 3}
+    - {fileID: 2800000, guid: 6ebae757d3412664e986c3e2d0714e78, type: 3}
+    - {fileID: 2800000, guid: ed6589f1f5a031b48b349a59af828784, type: 3}
+    - {fileID: 2800000, guid: 5b03be35360cb004791936cd37569f75, type: 3}
+    - {fileID: 2800000, guid: 3983b89c6aa457b40aa523945ac9b127, type: 3}
+    - {fileID: 2800000, guid: b61809652132ac4458b215d494a8673e, type: 3}
+    - {fileID: 2800000, guid: d92b245c6742bf749b3b4c638f9b027a, type: 3}
+    - {fileID: 2800000, guid: d25c85ebe9278a544b1d5fa1c8602064, type: 3}
+    - {fileID: 2800000, guid: 90f000888ab5a9041bff1dbbd9017ada, type: 3}
+    - {fileID: 2800000, guid: ddb83897345b9454d95527af1e4a6d61, type: 3}
+    - {fileID: 2800000, guid: 6168028f45c3c14499438e65f5f99eb0, type: 3}
+    - {fileID: 2800000, guid: 887f0d477f6d9294aa0081429ad508f2, type: 3}
+    - {fileID: 2800000, guid: 550693e085481c94bba7954f0f4429ca, type: 3}
+    - {fileID: 2800000, guid: d84f83848b29a4243bcba756d6bed597, type: 3}
+    - {fileID: 2800000, guid: a5c45baec018bec4a83e3c9c025aac59, type: 3}
+    - {fileID: 2800000, guid: d3132cb3f94cbc34e9b69d5a1a9a46a0, type: 3}
+    - {fileID: 2800000, guid: b07f22989ecbe58468d23c7a0021220b, type: 3}
+    - {fileID: 2800000, guid: c07597133b8f6b445b6077072d344ba8, type: 3}
+    - {fileID: 2800000, guid: 15a0d223866e1024f89ff903a4133b35, type: 3}
+    - {fileID: 2800000, guid: 737bf8c357532994d9f692ca64776732, type: 3}
+    - {fileID: 2800000, guid: d5e5de503c7040c4f9a19cc62a4faca2, type: 3}
+    - {fileID: 2800000, guid: bf3ed2bdea83b4443bc123c9626b2fd5, type: 3}
+    - {fileID: 2800000, guid: d18e853f8a478f64b81d588d24ea4705, type: 3}
+    - {fileID: 2800000, guid: 13d5df19bdb6d7b46affe369e55e3cdf, type: 3}
+    - {fileID: 2800000, guid: ab6bdcaaedf8c4744a3f595ff4b02045, type: 3}
+    - {fileID: 2800000, guid: 76e95063eb3664941a35bc44bb108efa, type: 3}
+    - {fileID: 2800000, guid: d3d6c41e9d7ca4649b247c6e4a76d9a5, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d5e5de503c7040c4f9a19cc62a4faca2, type: 3}
+  - {fileID: 21300000, guid: 550693e085481c94bba7954f0f4429ca, type: 3}
+  - {fileID: 21300000, guid: 8466903178078a744b74d90565f7bc8d, type: 3}
+  - {fileID: 21300000, guid: ed6589f1f5a031b48b349a59af828784, type: 3}
+  - {fileID: 21300000, guid: c07597133b8f6b445b6077072d344ba8, type: 3}
+  - {fileID: 21300000, guid: 15a0d223866e1024f89ff903a4133b35, type: 3}
+  - {fileID: 21300000, guid: 76e95063eb3664941a35bc44bb108efa, type: 3}
+  - {fileID: 21300000, guid: d3132cb3f94cbc34e9b69d5a1a9a46a0, type: 3}
+  - {fileID: 21300000, guid: 737bf8c357532994d9f692ca64776732, type: 3}
+  - {fileID: 21300000, guid: d84f83848b29a4243bcba756d6bed597, type: 3}
+  - {fileID: 21300000, guid: 2d7a1d2584943e6458f0896b5246b2f7, type: 3}
+  - {fileID: 21300000, guid: 5b03be35360cb004791936cd37569f75, type: 3}
+  - {fileID: 21300000, guid: b61809652132ac4458b215d494a8673e, type: 3}
+  - {fileID: 21300000, guid: 887f0d477f6d9294aa0081429ad508f2, type: 3}
+  - {fileID: 21300000, guid: 6ebae757d3412664e986c3e2d0714e78, type: 3}
+  - {fileID: 21300000, guid: ddb83897345b9454d95527af1e4a6d61, type: 3}
+  - {fileID: 21300000, guid: 90f000888ab5a9041bff1dbbd9017ada, type: 3}
+  - {fileID: 21300000, guid: b07f22989ecbe58468d23c7a0021220b, type: 3}
+  - {fileID: 21300000, guid: e9a319e8517a7a648a22145f761f4fe4, type: 3}
+  - {fileID: 21300000, guid: 13d5df19bdb6d7b46affe369e55e3cdf, type: 3}
+  - {fileID: 21300000, guid: ab6bdcaaedf8c4744a3f595ff4b02045, type: 3}
+  - {fileID: 21300000, guid: d25c85ebe9278a544b1d5fa1c8602064, type: 3}
+  - {fileID: 21300000, guid: d92b245c6742bf749b3b4c638f9b027a, type: 3}
+  - {fileID: 21300000, guid: 3983b89c6aa457b40aa523945ac9b127, type: 3}
+  - {fileID: 21300000, guid: bf3ed2bdea83b4443bc123c9626b2fd5, type: 3}
+  - {fileID: 21300000, guid: d3d6c41e9d7ca4649b247c6e4a76d9a5, type: 3}
+  - {fileID: 21300000, guid: a5c45baec018bec4a83e3c9c025aac59, type: 3}
+  - {fileID: 21300000, guid: d18e853f8a478f64b81d588d24ea4705, type: 3}
+  - {fileID: 21300000, guid: 6168028f45c3c14499438e65f5f99eb0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Sword 1
+  - Potion 2
+  - Armor 1
+  - Axe 1
+  - Shield 3
+  - Shield 4
+  - Sword 6
+  - Shield 1
+  - Shield 5
+  - Potion 3
+  - Armor 3
+  - Axe 2
+  - Axe 4
+  - Potion 1
+  - Armor 4
+  - Axe 8
+  - Axe 7
+  - Shield 2
+  - Armor 2
+  - Sword 4
+  - Sword 5
+  - Axe 6
+  - Axe 5
+  - Axe 3
+  - Sword 2
+  - Sword 7
+  - Potion 4
+  - Sword 3
+  - Current Palette
   m_RenderDataMap: {}
   m_Tag: IndividualItems_Atlas
   m_IsVariant: 0
