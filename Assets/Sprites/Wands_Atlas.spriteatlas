@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Wands_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c031d3e1d19781c44b1864e5b39bcc23, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 4435939271444520375, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 7304226416371549032, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 5405929688849295416, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 3440034211223653763, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -9147396766425336489, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -8398556807568959429, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -1953908397510649530, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -7943036985614490054, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -9139670896306735879, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -7857295006190233388, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 814449194126374182, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -6060774012368266239, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 1335464699084103565, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 3710975852773283018, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 6258632039856548406, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -2809102951965263307, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -293546670421931601, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 7884753124969554537, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 2991807891106039870, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -6426910345808927280, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 9136572586580980825, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -5417568456327803204, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 7812922679245814028, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -4169679959493495406, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 6006584691469345315, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -3105816000483871471, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -7973329778112764012, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -5414278431506769417, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -8326021454703806707, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -6524235327178597504, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -350776816402603900, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 3473603477344686167, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 6913695524668198517, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -4924458072177560271, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -1650711677974074686, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: 7453009820905047790, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -3174825172245463635, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -2608696250400520440, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  - {fileID: -5627770803557379632, guid: 29d42ea089bbdf64589759671e7c1774, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Wands_10
+  - Wands_11
+  - Wands_12
+  - Wands_13
+  - Wands_14
+  - Wands_15
+  - Wands_16
+  - Wands_36
+  - Wands_17
+  - Wands_37
+  - Wands_18
+  - Wands_34
+  - Wands_19
+  - Wands_35
+  - Wands_32
+  - Wands_33
+  - Wands_30
+  - Wands_31
+  - Wands_1
+  - Wands_0
+  - Wands_3
+  - Wands_2
+  - Wands_5
+  - Wands_38
+  - Wands_4
+  - Wands_7
+  - Wands_6
+  - Wands_9
+  - Wands_8
+  - Wands_29
+  - Wands_28
+  - Wands_21
+  - Wands_20
+  - Wands_23
+  - Wands_22
+  - Wands_25
+  - Wands_24
+  - Wands_27
+  - Wands_26
+  m_RenderDataMap: {}
+  m_Tag: Wands_Atlas
+  m_IsVariant: 0
