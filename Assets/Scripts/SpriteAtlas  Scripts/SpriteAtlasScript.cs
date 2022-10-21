@@ -13,5 +13,6 @@ public class SpriteAtlasScript : MonoBehaviour
     void Start()
     {
         GetComponent<Image>().sprite = _mainAtlas.GetSprite(_individualSprite_name);
+        GetComponent<Image>().preserveAspect = true;
     }
 }
