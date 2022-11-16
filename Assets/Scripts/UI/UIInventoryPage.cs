@@ -19,10 +19,6 @@ namespace Inventory.UI
         [SerializeField]
         private MouseFollower mouseFollower;
 
-        /// <summary>
-        /// The list is essentially so that we create a 
-        /// reference to the index of each item in the inventory
-        /// </summary>
         List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
 
         private int currentlyDraggedItemIndex = -1;
