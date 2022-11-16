@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3098968560211854348, guid: 52fc3d19d7420a34298d6a2ad6a93c51, type: 3}
       propertyPath: m_Name
-      value: Rock_big
+      value: Rock_big Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4597770661017997176, guid: 52fc3d19d7420a34298d6a2ad6a93c51, type: 3}
       propertyPath: m_Sprite

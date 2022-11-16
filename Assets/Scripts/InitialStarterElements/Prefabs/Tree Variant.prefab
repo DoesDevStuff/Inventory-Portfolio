@@ -12,6 +12,10 @@ PrefabInstance:
       value: Tree Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2077375122324746120, guid: 831c0559d0c30cd45a8cde8c4b022e80, type: 3}
+      propertyPath: m_Size.x
+      value: 1.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077375122324746120, guid: 831c0559d0c30cd45a8cde8c4b022e80, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -981480096, guid: a80f2f96965d90f4a84cedbb38495621, type: 3}
