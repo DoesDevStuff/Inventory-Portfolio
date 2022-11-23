@@ -13,7 +13,7 @@ namespace Inventory.UI
         IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
     {
         [SerializeField]
-        private Image itemImage;
+        public Image itemImage;
         [SerializeField]
         private TMP_Text quantityTxt;
 
@@ -46,6 +46,12 @@ namespace Inventory.UI
             itemImage.sprite = sprite;
             quantityTxt.text = quantity + "";
             empty = false;
+        }
+
+        public void ClearData()
+        {
+            itemImage.sprite = null;
+            quantityTxt.text = null;
         }
 
         public void Select()

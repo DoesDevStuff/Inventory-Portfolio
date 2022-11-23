@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Inventory.Model;
+using Inventory.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +12,27 @@ public class CategoryManager : MonoBehaviour
     [SerializeField] private GridLayoutGroup inventoryGridContainer;
     [SerializeField] private InventorySO inventorySO;
 
-    private List<EquippableItemSO> _equippableItemsInInventory;
-    private List<EdibleItemSO> _edibleItemsInInventory;
+    private int numberOfItemsInInventoryCategory;
     
+    [SerializeField] private EquippableItemSO _swordSOType;
+    [SerializeField] private EquippableItemSO _axeSOType;
+    [SerializeField] private EdibleItemSO _potionSOType;
+    
+
+    private List<ItemSO> _axeItems = new List<ItemSO>();
+    private List<ItemSO> _swordItems = new List<ItemSO>() ;
+    private List<ItemSO> _potionItems = new List<ItemSO>();
+    
+    [SerializeField] private Sprite categoryInactive;
+    [SerializeField] private Sprite categoryActive;
+    
+    [SerializeField] private UIInventoryItem[] itemButtons;
+    [SerializeField] private Button[] paginatonButtons;
+
     public enum CateogryEnum
     {
         Sword,
+        Axe,
         Potion
     }
 
@@ -30,23 +46,51 @@ public class CategoryManager : MonoBehaviour
 
     public List<CategoryClass> CategoryList = new List<CategoryClass>();
 
+
     private void Start()
     {
         foreach (var categoryListItem in CategoryList)
         {
-            categoryListItem.CategoryButton.onClick.AddListener( () => CategorySelected(categoryListItem.CateogryEnum));
+            categoryListItem.CategoryButton.onClick.AddListener( () => CategorySelected(categoryListItem));
         }
+
+        CategorizePlayerItems();
+        CategorySelected(CategoryList[0]);
     }
 
-    private void CategorySelected(CateogryEnum categoryEnum)
+    private void CategorySelected(CategoryClass selectedCategoryClass)
     {
-        print( categoryEnum +" was selected");
-        
-        // TODO - Set as active category button (visual)
-        // TODO - Unset the previous active category button (visual)
-        // TODO - Clear the existing Inventory Grid
-        // TODO - Call PopulateInventoryCells() with the associated category type, from the categoryEnum
-        // TODO - Based on that category's List that's associated with that
+        CateogryEnum selectedCategory;
+        ItemSO[] categoryItems;
+       
+        for (int i = 0; i < CategoryList.Count; i++)
+        {
+            if (CategoryList[i] == selectedCategoryClass) {
+                selectedCategoryClass.CategoryButton.image.sprite = categoryActive;
+                selectedCategoryClass.CategoryButton.interactable = false;
+
+                selectedCategory = selectedCategoryClass.CateogryEnum;
+
+                switch (selectedCategory)
+                {
+                    case CateogryEnum.Sword:
+                        PopulateInventoryCells(_swordItems);
+                        break;
+                    case CateogryEnum.Axe:
+                        PopulateInventoryCells(_axeItems);
+                        break;
+                    case CateogryEnum.Potion:
+                        print(_potionItems.Count);
+                        PopulateInventoryCells(_potionItems);
+                        break;
+                }
+            }
+            else
+            {
+                CategoryList[i].CategoryButton.interactable = true;
+                CategoryList[i].CategoryButton.image.sprite = categoryInactive;
+            }
+        }
     }
 
     // TODO - Should be called whenever the Inventory is opened
@@ -54,16 +98,22 @@ public class CategoryManager : MonoBehaviour
     {
         foreach (var inventoryItem in inventorySO.inventoryItems)
         {
-            // print(inventoryItem.item);
             switch (inventoryItem.item)
             {
                 case EquippableItemSO:
                     print("Getting Equipable Item");
-                    _equippableItemsInInventory.Add((EquippableItemSO) inventoryItem.item);
+                    if (inventoryItem.item == _swordSOType)
+                    {
+                        _swordItems.Add((EquippableItemSO) inventoryItem.item);
+                    } else if (inventoryItem.item == _axeSOType)
+                    {
+                        _axeItems.Add((EquippableItemSO) inventoryItem.item);
+                    }
                     break;
                 case EdibleItemSO:
-                    _equippableItemsInInventory.Add((EquippableItemSO) inventoryItem.item);
                     print("Getting Edible Item");
+                    print(inventoryItem.quantity);
+                    _potionItems.Add((EdibleItemSO) inventoryItem.item);
                     break;
                 default:
                     print("No Item found");
@@ -73,12 +123,46 @@ public class CategoryManager : MonoBehaviour
     }
 
     // TODO - Should be called whenever the Inventory is opened + When the player changes the Inventory Category 
-    private void PopulateInventoryCells()
+    private void PopulateInventoryCells(List<ItemSO> items)
     {
+        foreach (var itemButton in itemButtons)
+        {
+            itemButton.ClearData();
+        }
         
-        
-        
-        // Instantie into inventoryGridContainer here   
+        for (int i = 0; i < items.Count; i++)
+        {
+            itemButtons[i].SetData(items[i].ItemImage, 0);
+        }
+    }
+
+    // private void FindItemsInInventory(CateogryEnum ateogryEnum)
+    // {
+    //
+    //     int paginationAmount;
+    //     
+    //     switch (selectedCategory.CateogryEnum)
+    //     {
+    //         case CateogryEnum.Sword:
+    //             paginationAmount = Mathf.FloorToInt(_swordItems.Count / 2);
+    //             
+    //             ShowPagination(paginationAmount);
+    //             
+    //             break;
+    //         case CateogryEnum.Potion:
+    //             break;
+    //     }
+    // }
+
+    private void ShowPagination(int paginationAmount)
+    {
+        for (int i = 0; i < paginationAmount; i++)
+        {
+            CanvasGroup paginationCanvasGroup = paginatonButtons[i].GetComponent<CanvasGroup>();
+            paginationCanvasGroup.alpha = 1;
+            paginationCanvasGroup.interactable = true;
+            paginationCanvasGroup.blocksRaycasts = true;
+        }
     }
 
 
