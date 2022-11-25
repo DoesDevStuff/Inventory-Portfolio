@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Inventory.Model;
 using UnityEngine;
 
 namespace Inventory.UI
@@ -39,20 +40,18 @@ namespace Inventory.UI
             itemDescription.ResetDescription();
         }
 
-        public void InitializeInventoryUI(int inventorysize)
+        // public void InitializeInventoryUI(int inventorysize)
+        public void InitializeInventoryUI(UIInventoryItem inventoryItem)
         {
-            // for (int i = 0; i < inventorysize; i++)
-            // {
-            //     UIInventoryItem uiItem =
-            //         Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
-            //     uiItem.transform.SetParent(contentPanel);
-            //     listOfUIItems.Add(uiItem);
-            //     uiItem.OnItemClicked += HandleItemSelection;
-            //     uiItem.OnItemBeginDrag += HandleBeginDrag;
-            //     uiItem.OnItemDroppedOn += HandleSwap;
-            //     uiItem.OnItemEndDrag += HandleEndDrag;
-            //     uiItem.OnRightMouseBtnClick += HandleShowItemActions;
-            // }
+            // UIInventoryItem uiItem =
+            //     Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
+            // uiItem.transform.SetParent(contentPanel);
+            listOfUIItems.Add(inventoryItem);
+            inventoryItem.OnItemClicked += HandleItemSelection;
+            inventoryItem.OnItemBeginDrag += HandleBeginDrag;
+            inventoryItem.OnItemDroppedOn += HandleSwap;
+            inventoryItem.OnItemEndDrag += HandleEndDrag;
+            inventoryItem.OnRightMouseBtnClick += HandleShowItemActions;
         }
 
         internal void ResetAllItems()
@@ -72,11 +71,11 @@ namespace Inventory.UI
         }
 
         public void UpdateData(int itemIndex,
-            Sprite itemImage, int itemQuantity)
+            Sprite itemImage, bool stackable, int itemQuantity)
         {
             if (listOfUIItems.Count > itemIndex)
             {
-                listOfUIItems[itemIndex].SetData(itemImage, itemQuantity);
+                listOfUIItems[itemIndex].SetData(itemImage, stackable, itemQuantity);
             }
         }
 
@@ -122,10 +121,11 @@ namespace Inventory.UI
             OnStartDragging?.Invoke(index);
         }
 
-        public void CreateDraggedItem(Sprite sprite, int quantity)
+        public void CreateDraggedItem(Sprite sprite, bool isStackable, int quantity)
         {
-            mouseFollower.Toggle(true);
-            mouseFollower.SetData(sprite, quantity);
+            // mouseFollower.Toggle(true);
+            mouseFollower.gameObject.SetActive(true);
+            mouseFollower.SetData(sprite, isStackable, quantity);
         }
 
         private void HandleItemSelection(UIInventoryItem inventoryItemUI)

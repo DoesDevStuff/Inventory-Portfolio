@@ -15,8 +15,11 @@ namespace Inventory.UI
         [SerializeField]
         public Image itemImage;
         [SerializeField]
+        private CanvasGroup textBackgroundCanvasGroup;
+        [SerializeField]
         private TMP_Text quantityTxt;
 
+        
         [SerializeField]
         private Image borderImage;
 
@@ -40,17 +43,25 @@ namespace Inventory.UI
         {
             borderImage.enabled = false;
         }
-        public void SetData(Sprite sprite, int quantity)
+        public void SetData(Sprite sprite, bool stackable = false, int quantity = 1)
         {
             itemImage.gameObject.SetActive(true);
+            itemImage.color = Color.white;
             itemImage.sprite = sprite;
-            quantityTxt.text = quantity + "";
             empty = false;
+
+            if (stackable)
+            {
+                textBackgroundCanvasGroup.alpha = 1;
+                quantityTxt.text = quantity.ToString();
+            }
         }
 
         public void ClearData()
         {
+            textBackgroundCanvasGroup.alpha = 0;
             itemImage.sprite = null;
+            itemImage.color = Color.clear;
             quantityTxt.text = null;
         }
 

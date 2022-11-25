@@ -132,7 +132,7 @@ public class CategoryManager : MonoBehaviour
         
         for (int i = 0; i < items.Count; i++)
         {
-            itemButtons[i].SetData(items[i].ItemImage, 0);
+            itemButtons[i].SetData(items[i].ItemImage, items[i].IsStackable, 0);
         }
     }
 
