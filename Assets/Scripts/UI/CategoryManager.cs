@@ -71,6 +71,8 @@ public class CategoryManager : MonoBehaviour
 
                 selectedCategory = selectedCategoryClass.CateogryEnum;
 
+                bool shouldCheckPagination = true;
+                
                 switch (selectedCategory)
                 {
                     case CateogryEnum.Sword:
@@ -83,6 +85,14 @@ public class CategoryManager : MonoBehaviour
                         print(_potionItems.Count);
                         PopulateInventoryCells(_potionItems);
                         break;
+                    default:
+                        shouldCheckPagination = false;
+                        break;
+                }
+
+                if (shouldCheckPagination)
+                {
+                    
                 }
             }
             else
@@ -134,6 +144,34 @@ public class CategoryManager : MonoBehaviour
         {
             itemButtons[i].SetData(items[i].ItemImage, items[i].IsStackable, 0);
         }
+        
+        CheckPagination(items);
+    }
+    
+    private void CheckPagination(List<ItemSO> itemList)
+    {
+        foreach (Button paginatonButton in paginatonButtons)
+        {
+            CanvasGroup paginationCanvasGroup = paginatonButton.GetComponent<CanvasGroup>();
+            paginationCanvasGroup.alpha = 0;
+            paginationCanvasGroup.interactable = false;
+            paginationCanvasGroup.blocksRaycasts = false;
+        }
+
+        int inventoryContentGridSize = 21;
+        int paginationAmount = Mathf.FloorToInt(itemList.Count / inventoryContentGridSize);
+
+        if (paginationAmount > 1)
+        {
+            for (int i = 0; i < paginationAmount; i++)
+            {
+                CanvasGroup paginationCanvasGroup = paginatonButtons[i].GetComponent<CanvasGroup>();
+                paginationCanvasGroup.alpha = 1;
+                paginationCanvasGroup.interactable = true;
+                paginationCanvasGroup.blocksRaycasts = true;
+            }
+        }
+        
     }
 
     // private void FindItemsInInventory(CateogryEnum ateogryEnum)

@@ -40,12 +40,11 @@ namespace Inventory.UI
             itemDescription.ResetDescription();
         }
 
-        // public void InitializeInventoryUI(int inventorysize)
         public void InitializeInventoryUI(UIInventoryItem inventoryItem)
         {
-            // UIInventoryItem uiItem =
-            //     Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
-            // uiItem.transform.SetParent(contentPanel);
+            UIInventoryItem uiItem =
+                Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
+            uiItem.transform.SetParent(contentPanel);
             listOfUIItems.Add(inventoryItem);
             inventoryItem.OnItemClicked += HandleItemSelection;
             inventoryItem.OnItemBeginDrag += HandleBeginDrag;
@@ -53,6 +52,22 @@ namespace Inventory.UI
             inventoryItem.OnItemEndDrag += HandleEndDrag;
             inventoryItem.OnRightMouseBtnClick += HandleShowItemActions;
         }
+        
+        // public void InitializeInventoryUI(int inventorysize)
+        // {
+        //     for (int i = 0; i < inventorysize; i++)
+        //     {
+        //         UIInventoryItem uiItem =
+        //             Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
+        //         uiItem.transform.SetParent(contentPanel);
+        //         listOfUIItems.Add(uiItem);
+        //         uiItem.OnItemClicked += HandleItemSelection;
+        //         uiItem.OnItemBeginDrag += HandleBeginDrag;
+        //         uiItem.OnItemDroppedOn += HandleSwap;
+        //         uiItem.OnItemEndDrag += HandleEndDrag;
+        //         uiItem.OnRightMouseBtnClick += HandleShowItemActions;
+        //     }
+        // }
 
         internal void ResetAllItems()
         {
@@ -123,7 +138,7 @@ namespace Inventory.UI
 
         public void CreateDraggedItem(Sprite sprite, bool isStackable, int quantity)
         {
-            // mouseFollower.Toggle(true);
+            mouseFollower.Toggle(true);
             mouseFollower.gameObject.SetActive(true);
             mouseFollower.SetData(sprite, isStackable, quantity);
         }
