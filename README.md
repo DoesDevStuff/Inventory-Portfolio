@@ -16,13 +16,30 @@ The following are images from the Unity build as well as the Figma Design creati
 
 ### UI Design
 In Figma
-#### Wireframes
+### Design Process
 The process of designing the wireframes went through many different iterations and was loosely based on the reference image of the inventory design in Cult of the lamb and Zelda
 - Reference Image
 
-![image 1](https://user-images.githubusercontent.com/74312830/208524586-d15b8ad5-6f2a-426e-98f0-aef902544d36.png)
+![image 1](https://user-images.githubusercontent.com/74312830/211550534-0b843eae-f1d3-4dda-aa67-fdb4caa26195.png)
 
 
-2. Flow Chart
+- Flow Chart
 
 ![Data Flow](https://user-images.githubusercontent.com/74312830/208524409-2824167a-fd1f-4327-b5ac-74c4c4b3a790.png)
+
+### Wireframing
+- Inventory Ideation. Visualising the different sizes and consideration needed for handling larger number of items
+
+![Frame 33](https://user-images.githubusercontent.com/74312830/211550797-02929c28-78da-4882-a8f3-a9bf001c88c0.png)
+
+- Inventory Panels
+
+![Frame 1](https://user-images.githubusercontent.com/74312830/211551170-ba41c141-e363-44e1-8504-ab858a67cb23.png)
+![Frame 6](https://user-images.githubusercontent.com/74312830/211551174-35375a08-618d-4105-8b4f-a629f2ed9db0.png)
+![Frame 8](https://user-images.githubusercontent.com/74312830/211551179-61ca0aae-b8cd-410f-a1ba-6210bb832e5b.png)
+
+### Game and Inventory In-game visualisation
+![the game](https://user-images.githubusercontent.com/74312830/211551601-bd3c4efb-6419-40d6-a780-0d7f221f51d7.png)
+![Frame 27](https://user-images.githubusercontent.com/74312830/211551689-42deaf0b-b608-40aa-800f-2c61dd1d7bd2.png)
+
+
