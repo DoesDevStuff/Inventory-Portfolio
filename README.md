@@ -1,11 +1,16 @@
 # Inventory-Portfolio
 This was a personal project undertaken to learn better ways of Inventory Creation.
 
+# Video showcase
+
+https://user-images.githubusercontent.com/74312830/227807232-4933007b-0ad9-44b4-8cf6-49f86522c464.mp4
+
 ## Project Goals
 1. Optimise the way items are loaded into the inventory
 2. Usage of Sprite Atlas
 3. Understand the use of Scriptable Objects and utilise it in an Model View Controller Pattern for the inventory Creation
 4. Do two styles of inventory, one that is more simplistic and like a quick prototype and another for a more extensive inventory structure handling much larger item sizes.
+5. Use audio and animations with sprite sheets and Flash shader.
 
 ## Project Contents
 1. UI Frames and sprites were created in Figma for this specific project
