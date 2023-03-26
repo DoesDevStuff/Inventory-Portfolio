@@ -207,7 +207,7 @@ MonoBehaviour:
   hittable:
     serializedVersion: 2
     m_Bits: 64
-  damage: 1
+  damage: 2
 --- !u!1 &2628628848248481157
 GameObject:
   m_ObjectHideFlags: 0

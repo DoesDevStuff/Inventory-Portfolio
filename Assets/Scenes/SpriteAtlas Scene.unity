@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4a91e59e6f0e14ab1feb3db32b2a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 0}
+  weapon: {fileID: 11400000, guid: e738f2a5a87aafb4a9df3467e7721307, type: 2}
   inventoryData: {fileID: 11400000, guid: dc322964b2613be4dae3afcd01576abe, type: 2}
   parametersToModify:
   - itemParameter: {fileID: 11400000, guid: 513d9b52466418e488cc5267aaf1c6ee, type: 2}
@@ -2370,19 +2370,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8399157129165407126, guid: 68852ff7984f99d4c81aecd77eb5aaa4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8399157129165407126, guid: 68852ff7984f99d4c81aecd77eb5aaa4, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8399157129165407126, guid: 68852ff7984f99d4c81aecd77eb5aaa4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8399157129165407126, guid: 68852ff7984f99d4c81aecd77eb5aaa4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -37.5
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68852ff7984f99d4c81aecd77eb5aaa4, type: 3}
